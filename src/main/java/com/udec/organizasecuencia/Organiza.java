@@ -33,11 +33,11 @@ public class Organiza {
      * Metodo que separa por espacios los numeros ingresados
      */
     public Organiza(){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Digite la secuencia separando cada numero por un espacio:  ");
         //Lectura de la cantidad de numeros a organzar
-        String arr = sc.nextLine();
-        capturaArray = arr.split(" ");
+        String array = scanner.nextLine();
+        capturaArray = array.split(" ");
         numeros = new byte[capturaArray.length];
         for(int i=0;i< capturaArray.length;i++){
             numeros[i] = Byte.parseByte(capturaArray[i]);
